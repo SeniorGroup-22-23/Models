@@ -15,10 +15,10 @@ public final class Match: Model, Content{
     @ID(key: .id)
     public var id: UUID?
     
-    @Field(key: "first_user_id")
+    @Field(key: "user_id")
     public var firstUserId: UUID
     
-    @Field(key: "second_user_id")
+    @Field(key: "matched_with_id")
     public var secondUserId: UUID
     
     // 1 = direct
@@ -26,16 +26,24 @@ public final class Match: Model, Content{
     @Field(key: "type")
     public var type: Int16
     
+    @Field(key: "phone_sent")
+    public var phoneSent: Bool
+    
+    @Field(key: "phone_received")
+    public var phoneReceived: Bool
+    
     
     public init(){
         
     }
     
-    public init(id: UUID? = nil, firstUserId: UUID, secondUserId: UUID, type: Int16){
+    public init(id: UUID? = nil, firstUserId: UUID, secondUserId: UUID, type: Int16, phoneSent: Bool, phoneReceived: Bool){
         self.id = id
         self.firstUserId = firstUserId
         self.secondUserId = secondUserId
         self.type = type
+        self.phoneSent = phoneSent
+        self.phoneReceived = phoneReceived
         
     }
 }
