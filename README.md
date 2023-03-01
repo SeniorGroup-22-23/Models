@@ -182,11 +182,12 @@ Issue list:
 
 | Int16 | Description |
 |:---------:|:-----------:|
-| 0 | Fake Profile |
-| 1 | Inapropriate profile details |
-| 2 | Harrasment or Bullying |
-| 3 | Unwanted sexual messages |
-| 4 | Scam |
-| 5 | Underage person |
+| 0 | No Issue (block no report) |
+| 1 | Fake Profile |
+| 2 | Inapropriate profile details |
+| 3 | Harrasment or Bullying |
+| 4 | Unwanted sexual messages |
+| 5 | Scam |
+| 6 | Underage person |
 
 
