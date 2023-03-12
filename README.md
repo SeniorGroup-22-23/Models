@@ -178,7 +178,16 @@ The Block model stores a reference to a User who has blocked another User. It ke
 | reported | did the User who blocked the other User also report them | Bool |
 | issue | an integer indicating the particular issue that led to a user being reported. Null if "reported" is false | Int16 |
 
+Issue list: 
 
-
+| Int16 | Description |
+|:---------:|:-----------:|
+| 0 | No Issue (block no report) |
+| 1 | Fake Profile |
+| 2 | Inapropriate profile details |
+| 3 | Harrasment or Bullying |
+| 4 | Unwanted sexual messages |
+| 5 | Scam |
+| 6 | Underage person |
 
 
