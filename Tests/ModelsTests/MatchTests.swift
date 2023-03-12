@@ -15,11 +15,9 @@ final class MatchTests: XCTestCase{
         let firstUserId = UUID()
         let secondUserId = UUID()
         let direct = Int16(1)
-        let phoneSent = true
-        let phoneReceived = false
         
         
-        let match = Match(id: nil, firstUserId: firstUserId, secondUserId: secondUserId, type: 1, phoneSent: phoneSent, phoneReceived: phoneReceived)
+        let match = Match(id: nil, firstUserId: firstUserId, secondUserId: secondUserId, type: 1)
         
         XCTAssertNil(match.id)
         
@@ -31,12 +29,7 @@ final class MatchTests: XCTestCase{
         
         XCTAssertEqual(match.type, direct)
         XCTAssert((match.type as Any) is Int16)
-        
-        XCTAssertEqual(match.phoneSent, phoneSent)
-        XCTAssert((match.phoneSent as Any) is Bool)
-        
-        XCTAssertEqual(match.phoneReceived, phoneReceived)
-        XCTAssert((match.phoneReceived as Any) is Bool)
+
         
     }
 }
