@@ -26,7 +26,6 @@ public final class Match: Model, Content{
     @Field(key: "type")
     public var type: Int16
     
-    
     public init(){
         
     }
@@ -36,7 +35,6 @@ public final class Match: Model, Content{
         self.firstUserId = firstUserId
         self.secondUserId = secondUserId
         self.type = type
-        
     }
 }
 
